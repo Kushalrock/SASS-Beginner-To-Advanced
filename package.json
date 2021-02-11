@@ -1,0 +1,19 @@
+{
+  "name": "sass-beginner-to-advanced",
+  "version": "1.0.0",
+  "description": "This will help you get started with SASS easily",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sass",
+    "css",
+    "webdevelopment"
+  ],
+  "author": "Kushal Agrawal",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
