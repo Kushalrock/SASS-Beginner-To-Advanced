@@ -29,8 +29,9 @@ npm install node-sass --save-dev
 npm install jquery --save
 ```
 The --save-dev are called dev dependency which are optional while jquery are called dependency in package json format.
-Don't install jquery it has been just given for sake of info. If you are using it go ahead.
-5. Modify the pacakge.json scripts line as instructed below...
+Don't install jquery it has been just given for sake of info. If you are using it go ahead. <br />
+
+5. Modify the package.json scripts line as instructed below...
 6. Follow the above steps to compile. It will be same.
 
 # Inner workings of package.json(Skip, Come back later)
