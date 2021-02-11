@@ -24,3 +24,4 @@ sass/main.scss is the input file while css/styel.css is where the output of scss
 ```
 npm run compile:sass
 ```
+3. Close the terminal and it will stop compiling scss code..
