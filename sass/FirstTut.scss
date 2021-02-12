@@ -1,0 +1,78 @@
+// Resetted the margin, padding
+*{
+  margin: 0;
+  padding: 0;
+}
+// Variables are declared with a '$' sign
+$color-primary: #797979;
+$color-secondary: #000;
+$color-tertiary: #fff;
+
+nav{
+  position: relative;
+  margin: 30px;
+}
+nav::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+// One main feature and advantages of SASS is nesting instead of writing .navigation li you can simply nest it.
+
+// & gives us the path till that point.
+
+// &:first-child and only nesting first child are two different things
+
+/*
+.nav{
+  :first-child{
+    This would compile to .nav :first-child
+  }
+  &:first-child{
+    This would compile to .nav:first-child and we know by syntax that pseudo-class declaration doesn'tc ontain space
+  }
+
+  Try it out by uncommenting and then looking at the compiled style.css
+}*/
+.navigation{
+  list-style: none;
+  float: left;
+  li{
+    display: inline-block;
+    color: $color-primary;
+    margin-left: 30px;
+    padding: 10px;
+    &:first-child{
+      margin: 0;
+    }
+    &:hover{
+      background-color: $color-secondary;
+    }
+  }
+  a:link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-primary;
+    &:hover{
+      color: $color-tertiary;
+    }
+  }
+}
+
+.btn{
+  float: right;
+}
+.btn-main:link,
+.btn-sub:link{
+  padding: 10px;
+  text-align: center;
+  border-radius: 100px;
+  text-decoration: none;
+  display: inline-block;
+  color: $color-primary;
+  text-transform: uppercase;
+  &:hover{
+    background-color: $color-secondary;
+    color: $color-tertiary;
+  }
+}
